@@ -520,12 +520,12 @@ class RunningCommand(object):
     @property
     def stdout(self):
         self.wait()
-        return self.process.stdout
+        return self.process.stdout.strip()
 
     @property
     def stderr(self):
         self.wait()
-        return self.process.stderr
+        return self.process.stderr.strip()
 
     @property
     def exit_code(self):

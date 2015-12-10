@@ -1,2 +1,7 @@
+sh.egg*
+build/
+.idea/*
+.idea/vcs.xml
+.tox
 __pycache__/
 *.py[co]
